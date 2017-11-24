@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('eot'), url('../fonts/iconfont.woff2') format('woff2'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype'), url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+.icon:before {
+  font-family: "iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  /* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+  text-decoration: none;
+  text-transform: none;
+}
+.icon-star:before {
+  content: "\E001";
+}
+* {
+  max-height: 10000px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: none;
+  margin: 0;
+  min-width: 320px;
+  font: 14px/20px 'Arial', 'Helvetica', sans-serif;
+  color: #666;
+  background: #fff;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: top;
+  max-width: 100%;
+  border: 0;
+}
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+a:hover {
+  color: #7fb0ea;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+input,
+textarea,
+select {
+  font: 12px Arial, Helvetica, sans-serif;
+  vertical-align: middle;
+  outline: none;
+}
+::-moz-placeholder {
+  opacity: 1;
+}
+input[type="image"] {
+  padding: 0;
+  border: none;
+}
+input[type=url],
+input[type=search],
+input[type=tel],
+input[type=email],
+input[type=text],
+input[type=password],
+input[type=file],
+input[type=submit],
+textarea {
+  -webkit-appearance: none;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+#wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.w1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*# sourceMappingURL=all.css.map */
