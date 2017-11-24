@@ -4,8 +4,10 @@
 
 $black: #000;
 $white: #fff;
-$gray: #666;
-$blue: #4a90e2;
+$dark-gray: #252525;
+$gray: #95989a;
+$light-gray: #ddd;
+$blue: #07a3ee;
 $red: #db2023;
 $yellow: #f9b42d;
 $green: #8ed72b;
@@ -16,8 +18,8 @@ $base-font-serif: 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
 // Body
 $base-text-color: $gray !default;
 $base-background-color: $white !default;
-$base-font-size: 14px !default;
-$base-line-height: 1.429 !default; // 20px
+$base-font-size: 24px !default;
+$base-line-height: 1.167 !default; // 28px
 $base-font-family: $base-font-sans-serif !default;
 
 $vertical-rhythm: ($base-line-height * 1em);
@@ -41,7 +43,7 @@ $form-element-focus-border-color: $black !default;
 $placeholder-color: $gray !default;
 
 // Headers
-$h1-font-size: 30px !default;
+$h1-font-size: 42px !default;
 $h2-font-size: 27px !default;
 $h3-font-size: 24px !default;
 $h4-font-size: 21px !default;
@@ -49,7 +51,7 @@ $h5-font-size: 17px !default;
 $h6-font-size: 15px !default;
 
 $headings-font-family: inherit !default;
-$headings-color: inherit !default;
+$headings-color: $dark-gray !default;
 
 $animation-speed: 0.2s;
 $animation-effect: ease;
