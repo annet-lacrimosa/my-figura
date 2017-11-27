@@ -8,7 +8,7 @@ $dark-gray: #252525;
 $gray: #95989a;
 $light-gray: #ddd;
 $blue: #07a3ee;
-$red: #db2023;
+$red: #c83e3e;
 $yellow: #f9b42d;
 $green: #8ed72b;
 
@@ -37,10 +37,10 @@ $btn-padding: 0.4em 0.7em !default;
 $btn-font-size: inherit !default;
 
 // Forms
-$form-element-padding: $btn-padding !default;
+$form-element-padding: 21px 15px 13px !default;
 $form-element-border-color: $gray !default;
 $form-element-focus-border-color: $black !default;
-$placeholder-color: $gray !default;
+$placeholder-color: #ccc !default;
 
 // Headers
 $h1-font-size: 42px !default;

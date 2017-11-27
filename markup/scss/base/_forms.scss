@@ -20,18 +20,41 @@ textarea {
   outline:0;
   border: 1px solid $form-element-border-color;
   padding: $form-element-padding;
-
+  display: block;
+  width: 100%;
+  font-size:24px;
+  line-height: 1.3;
   &:focus {
     border-color: $form-element-focus-border-color;
   }
-
   @include placeholder {
     color: $placeholder-color;
+  }
+  &.has-error{
+    border-color: $red;
+    border-width: 1px 1px 5px;
   }
 }
 
 select {
   -webkit-border-radius: 0;
+  appearance: none;
+  padding: 21px 0 13px 15px;
+  margin: 0 0 10px;
+  font-size:24px;
+  line-height: 1.3;
+  text-align: left;
+  width: 100%;
+  border: 1px solid $gray;
+  background: transparent url(../images/arrow-bottom.svg) no-repeat 100% center;
+  background-size: 65px;
+  color: $gray;
+  color: rgba(0,0,0,0);
+  text-shadow: 0 0 0 $gray;
+  outline: none;
+  &:focus{
+    outline: none;
+  }
 }
 
 textarea {

@@ -44,6 +44,10 @@ $media-expressions: (
 .center-holder{
 	max-width: 1200px;
 	margin: 0 auto;
+	@include media("<=widescreen"){
+		max-width: none;
+		padding: 0 20px;
+	}
 }
 .text-center{
 	text-align: center;
@@ -87,17 +91,39 @@ p{
 .question-form{
 	width: 620px;
 	margin: 0 auto 65px;
+	@include media("<=tablet"){
+		width: 80%;
+	}
+	&.address-form{
+		width: 944px;
+		@include media("<=desktop"){
+			width: 620px;
+		}
+		@include media("<=tablet"){
+			width: 80%;
+		}
+	}
 	.input-row{
 		display: flex;
 		margin: 0 -10px;
 		align-items: stretch;
 		width: 100%;
+		@include media("<=tablet"){
+			margin: 0;
+		}
 	}
 	.input-box{
 		padding: 0 10px 20px;
 		flex: none;
 		width: 50%;
 		min-height: 100%;
+		@include media("<=tablet"){
+			width: 100%;
+			padding: 0 0 15px;
+		}
+		&.full-width{
+			width: 100%;
+		}
 	}
 	.field-row{
 		max-width: 400px;
@@ -109,6 +135,17 @@ p{
 		line-height: 14px;
 		margin-bottom: 5px;
 		color: $light-gray;
+	}
+	.legend{
+		font-size:18px;
+		text-transform: uppercase;
+		color: #ddd;
+		text-align: center;
+		padding: 10px 15px;
+	}
+	.day_month_year{
+		text-align: center;
+		text-transform: uppercase;
 	}
 }
 .fake-checkbox{
@@ -156,8 +193,82 @@ p{
 		letter-spacing: 1px;
 	}
 }
+.info-block{
+	color: #07a3ee;
+	font-size:13px;
+	line-height: 21px;
+	overflow: hidden;
+	margin: 20px 0;
+	.icon{
+		float: left;
+		width: 15px;
+	}
+	.text{
+		overflow: hidden;
+		text-align: center;
+	}
+}
+.success-pop-up,
+.searching-pop-up{
+	width: 440px;
+	background: #fff;
+	padding: 20px;
+	margin: 50px auto;
+	h3{
+		color: #000000;
+		padding-top: 20px;
+		font-size: 11px;
+		padding-bottom: 0px;
+		width: 350px;
+		margin: auto;
+		font-weight: 400;
+	}
+}
 
-
-
+.js-success-pop-up-city,
+.js-success-pop-up-province{
+	display: block;
+	margin-top: 20px;
+	border: 1px solid $light-gray;
+	color: $blue;
+	text-align: center;
+	padding: $form-element-padding;
+	font-size:24px;
+	line-height: 1.3;
+	>*{
+		color: $blue;
+		margin: 0;
+	}
+}
+.success-pop-up-filter{
+	text-align: center;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 99999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	min-height: 920px;
+	display: none;
+	.btn-block{
+		margin: 20px auto;
+	}
+	.success-pop-up__title{
+		font-size: 32px;
+		font-weight: 400;
+		color: #252525;
+		margin: 20px 0;
+	}
+	.success-pop-up__icon{
+		width: 70px;
+		margin: 0 auto 30px;
+	}
+	.adjust{
+		font-size: 16px;
+		font-weight: 400;
+		color: #636363;
+	}
+}
 
 

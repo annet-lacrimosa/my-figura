@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 <html>
-@@include("templates/head.html")
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta content="IE=Edge" http-equiv="X-UA-Compatible">
+	<title>My Figura</title>
+	<link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
+	<link media="all" rel="stylesheet" href="css/all.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+	<script type="text/javascript">
+        window.jQuery || document.write('<script src="js/jquery-1.12.4.min.js" defer><\/script>')
+	</script>
+	<script type="text/javascript" src="js/jquery.main.js" defer></script>
+</head>
 <body>
 	<div id="wrapper">
 		<div class="vertical-center">
 			<div class="center-holder">
 				<div class="title-block text-center">
-					<h1>Select your budget</h1>
+					<h1>Would you be open to surgical?</h1>
 				</div>
 				<form action="#" class="question-form">
 					<fieldset>
 						<div class="input-row">
 							<div class="input-box">
 								<div class="fake-checkbox">
-									<input type="radio" checked name="budget">
+									<input type="radio" checked name="desired-fat">
 									<div class="fake-input">
-										<span>$800-$1499</span>
+										<span>Yes</span>
 									</div>
 								</div>
 							</div>
 							<div class="input-box">
 								<div class="fake-checkbox">
-									<input type="radio" name="budget">
+									<input type="radio" name="desired-fat">
 									<div class="fake-input">
-										<span>$1500-$2999</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="input-row">
-							<div class="input-box">
-								<div class="fake-checkbox">
-									<input type="radio" name="budget">
-									<div class="fake-input">
-										<span>$3000-$5999</span>
-									</div>
-								</div>
-							</div>
-							<div class="input-box">
-								<div class="fake-checkbox">
-									<input type="radio" name="budget">
-									<div class="fake-input">
-										<span>$6000+</span>
+										<span>No</span>
 									</div>
 								</div>
 							</div>
@@ -49,7 +43,7 @@
 					</fieldset>
 				</form>
 				<div class="btn-block text-center large-button">
-					<a href="step5.html" class="btn">Continue</a>
+					<a href="step8.html" class="btn">Continue</a>
 					<div class="info-block">
 						<div class="icon">
 							<img src="images/information-button.png" alt="image description" />

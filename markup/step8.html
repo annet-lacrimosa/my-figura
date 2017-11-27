@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta content="IE=Edge" http-equiv="X-UA-Compatible">
+	<title>My Figura</title>
+	<link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
+	<link media="all" rel="stylesheet" href="css/all.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+	<script type="text/javascript">
+        window.jQuery || document.write('<script src="js/jquery-1.12.4.min.js" defer><\/script>')
+	</script>
+	<script type="text/javascript" src="js/jquery.main.js" defer></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="vertical-center">
+			<div class="center-holder">
+				<div class="title-block text-center">
+					<h1>Where are you located?</h1>
+				</div>
+				<form action="#" class="question-form">
+					<fieldset>
+						<div class="input-row">
+							<div class="input-box full-width">
+								<input type="text" placeholder="City">
+							</div>
+						</div>
+						<div class="input-row">
+							<div class="input-box">
+								<select name='country' id='country'>
+									<option>Canada</option>
+									<option>USA</option>
+								</select>
+							</div>
+							<div class="input-box">
+								<select name='region' id='region'>
+									<option>Province 1</option>
+									<option>Province 2</option>
+									<option>Province 3</option>
+									<option>Province 4</option>
+									<option>Province 5</option>
+									<option>Province 6</option>
+								</select>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+				<div class="btn-block text-center large-button">
+					<a href="#" class="btn open-popup-btn">Continue</a>
+					<div class="info-block">
+						<div class="icon">
+							<img src="images/information-button.png" alt="image description" />
+						</div>
+						<div class="text">
+							<p>By telling us how much you can afford we are able to match you with a dealer partner who best meets your needs.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="success-pop-up-filter">
+		<!--<div class="searching-pop-up">
+            <svg id="speedometer" width="400px" height="250px"><desc>Created with Snap</desc><defs></defs>&lt;!&ndash;?xml version="1.0" encoding="UTF-8" standalone="no"?&ndash;&gt;
+                <svg width="400px" height="250px" viewBox="0 0 400 250" stroke-linecap="round" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    &lt;!&ndash; Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch &ndash;&gt;
+                    <title>Artboard 1</title>
+                    <desc>Created with Sketch.</desc>
+                    <defs>
+                        <linearGradient x1="-6.17777182%" y1="50.0000216%" x2="106.177763%" y2="50.0000216%" id="linearGradient-1">
+                            <stop stop-color="#80DFFE" offset="0%"></stop>
+                            <stop stop-color="#0CA5EE" offset="54.99%"></stop>
+                            <stop stop-color="#07A3EE" offset="100%"></stop>
+                        </linearGradient>
+                    </defs>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <path d="M53.388846,216.580002 C38.8992465,134.742752 91.7259114,56.8830114 173.833642,42.4645409 C206.535863,36.6971527 238.734973,40.8735373 268.116661,56.8830114 C327.584392,89.2997106 357.066702,150.354475 345.696391,215.088436" id="circle-gray" stroke="#F5F5F5" stroke-width="35"></path>
+                        <g id="Artboard-1">
+                            <path d="M53.388,216.573C38.902,134.738,91.728,56.883,173.834,42.465C206.535863,36.6971527,238.734973,40.8735373,268.116661,56.8830114C327.584392,89.2997106,357.066702,150.354475,345.696391,215.088436" id="circle" stroke="url(#linearGradient-1)" stroke-width="35"></path>
+                            <path d="M199.94929,225 C193.559838,225 187.170385,222.560976 182.302231,217.682927 C177.535497,212.906504 175,206.605691 175,200 C175,193.394309 177.636917,186.99187 182.302231,182.317073 L182.302231,182.317073 C192.139959,172.560976 207.657201,172.560976 217.596349,182.317073 C222.363083,187.093496 225,193.394309 225,200.101626 C225,206.808943 222.363083,213.109756 217.697769,217.784553 C212.728195,222.560976 206.338742,225 199.94929,225 L199.94929,225 Z M189.443298,189.461367 C186.576404,192.327031 185.040568,196.1138 185.040568,200.10526 C185.040568,204.09672 186.576404,207.88349 189.443298,210.749153 C195.279476,216.582826 204.80166,216.582826 210.637838,210.749153 C213.504732,207.88349 215.040568,204.09672 215.040568,200.10526 C215.040568,196.1138 213.504732,192.327031 210.637838,189.461367 C204.699271,183.73004 195.381865,183.627695 189.443298,189.461367 L189.443298,189.461367 Z" id="center-circle" fill="#363636"></path>
+                            <rect id="pin" fill="#363636" x="195" y="200" width="10" height="156" rx="5" transform="matrix(0.0698,-0.9976,0.9976,0.0698,-13.4641,385.5615)"></rect>
+                        </g>
+                    </g>
+                </svg></svg>
+            <h3>Searching for Vehicles in:</h3>
+            <span class="js-success-pop-up-city"><h4>City</h4></span>
+        </div>-->
+		<div class="success-pop-up">
+			<div class="success-pop-up__icon">
+				<img src="images/checked.svg" alt="image description">
+			</div>
+			<div class="success-pop-up__title">Congratulations!</div>
+			<div class="success-pop-up__message">
+				<div class="adjust"><span>You Qualify for Pre-Approval in:</span></div>
+				<div class="success-pop-up__message--city js-success-pop-up-province"><h4>Your Area</h4></div>
+				<div>
+					<h3>Become a Premium Member of the Canada Drives Affinity Program on the next page and get pre-approved for your car loan.</h3>
+				</div>
+				<div>
+					<h3>
+						Membership in the Affinity Program is governed by the Rules for Membership in Canada Drives Affinity Program
+						(<a href="https://www.canadadrives.ca/membership-rules" onclick="return canadaDriveLibrary.popup(this, 'Membership Rules')" name="Membership Rules" id="membership-rules-link" class="js-popup"><strong>available here</strong></a>).
+					</h3>
+				</div>
+				<div class="consent">
+					<h3>
+						By clicking on the Continue button, I confirm my agreement to Canada Drives' <a href="https://www.canadadrives.ca/general-terms-service" onclick="return canadaDriveLibrary.popup(this, 'General Terms of Service')" name="General Terms of Service" id="general-terms-link" class="js-popup"><strong>General Terms of
+						Service</strong></a> and my consent to Canada Drives, car dealers and lenders obtaining credit reports
+						about me to facilitate my application for a car loan.
+					</h3>
+				</div>
+			</div>
+			<div class="btn-block text-center large-button success-pop-up__button">
+				<a href="step9.html" class="btn js-success-pop-up-continue">Continue</a>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
+
+
