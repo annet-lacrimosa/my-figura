@@ -1,0 +1,71 @@
+span.jq-dte {
+  position: relative;
+}
+
+span.jq-dte-inner {
+  white-space: nowrap;
+}
+
+span.jq-dte input {
+  border: 0;
+  background-color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  vertical-align: middle;
+}
+
+span.jq-dte input.error {
+  background-color: #f99;
+  color: #000;
+}
+
+span.jq-dte.readonly,
+span.jq-dte.readonly span.jq-dte-inner,
+span.jq-dte.readonly input {
+  background-color: #f2f2f2;
+  color: #666;
+}
+
+span.jq-dte input.hint {
+  color: #999;
+}
+
+span.jq-dte span.separator {
+  color: #999;
+}
+
+span.jq-dte span.jq-dte-tooltip {
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 14px;
+  background-color: #f5f5b5;
+  border: 1px solid #666;
+  margin: 0;
+  padding: 1px 3px;
+  line-height: 125%;
+  z-index: 99;
+}
+
+span.jq-dte span.jq-dte-errorbox {
+  position:absolute !important;
+  left: auto !important;
+  top:0 !important;
+  bottom:100% !important;
+  display:block;
+  padding:0;
+  white-space:nowrap;
+  color: $red;
+  font-size:14px;
+  line-height: 1;
+  height: 14px;
+  font-style: italic;
+  text-align: left;
+}
+span.jq-dte span.jq-dte-errorbox:not([style*="display: none"])~span.jq-dte-inner,
+span.jq-dte span.jq-dte-errorbox[style*="display: block"]~span.jq-dte-inner{
+  border-color:$red;
+  border-width: 1px 1px 5px;
+}
+

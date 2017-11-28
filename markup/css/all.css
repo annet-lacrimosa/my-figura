@@ -599,6 +599,68 @@ label {
   .area .input-placeholder-text {
     white-space: normal; }
 
+span.jq-dte {
+  position: relative; }
+
+span.jq-dte-inner {
+  white-space: nowrap; }
+
+span.jq-dte input {
+  border: 0;
+  background-color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  vertical-align: middle; }
+
+span.jq-dte input.error {
+  background-color: #f99;
+  color: #000; }
+
+span.jq-dte.readonly,
+span.jq-dte.readonly span.jq-dte-inner,
+span.jq-dte.readonly input {
+  background-color: #f2f2f2;
+  color: #666; }
+
+span.jq-dte input.hint {
+  color: #999; }
+
+span.jq-dte span.separator {
+  color: #999; }
+
+span.jq-dte span.jq-dte-tooltip {
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 14px;
+  background-color: #f5f5b5;
+  border: 1px solid #666;
+  margin: 0;
+  padding: 1px 3px;
+  line-height: 125%;
+  z-index: 99; }
+
+span.jq-dte span.jq-dte-errorbox {
+  position: absolute !important;
+  left: auto !important;
+  top: 0 !important;
+  bottom: 100% !important;
+  display: block;
+  padding: 0;
+  white-space: nowrap;
+  color: #c83e3e;
+  font-size: 14px;
+  line-height: 1;
+  height: 14px;
+  font-style: italic;
+  text-align: left; }
+
+span.jq-dte span.jq-dte-errorbox:not([style*="display: none"]) ~ span.jq-dte-inner,
+span.jq-dte span.jq-dte-errorbox[style*="display: block"] ~ span.jq-dte-inner {
+  border-color: #c83e3e;
+  border-width: 1px 1px 5px; }
+
 #wrapper {
   position: relative;
   overflow: hidden; }
@@ -662,7 +724,7 @@ p {
   margin: 0 auto 65px; }
   @media (max-width: 768px) {
     .question-form {
-      width: 80%; } }
+      width: 90%; } }
   .question-form.address-form {
     width: 944px; }
     @media (max-width: 992px) {
@@ -670,7 +732,7 @@ p {
         width: 620px; } }
     @media (max-width: 768px) {
       .question-form.address-form {
-        width: 80%; } }
+        width: 90%; } }
   .question-form .input-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -698,7 +760,8 @@ p {
       width: 100%; }
   .question-form .field-row {
     max-width: 400px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
   .question-form .label {
     display: block;
     font-size: 14px;
@@ -834,5 +897,72 @@ p {
     font-size: 16px;
     font-weight: 400;
     color: #636363; }
+
+span.jq-dte {
+  position: static; }
+
+span.jq-dte-inner,
+input.date-input {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  color: #333;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 0;
+  border: 1px solid #95989a;
+  padding: 21px 15px 13px;
+  font-size: 24px;
+  line-height: 1.3;
+  background: #fff; }
+
+span.jq-dte-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+span.jq-dte input {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  height: 30px; }
+
+span.jq-dte span.separator {
+  flex-srink: 0; }
+
+span.jq-dte input.error {
+  color: #c83e3e;
+  background: #fff; }
+
+span.jq-dte input.hint {
+  color: #ccc; }
+
+@media (max-width: 768px) {
+  .jq-dte-month,
+  .jq-dte-day {
+    width: 50px !important; } }
+
+@media (max-width: 768px) {
+  .jq-dte-year {
+    width: 100px !important; } }
+
+span.jq-dte span.jq-dte-errorbox {
+  left: 22% !important; }
+
+@media (max-width: 768px) {
+  span.jq-dte span.jq-dte-errorbox {
+    left: 30% !important; } }
+
+@media (max-width: 480px) {
+  span.jq-dte span.jq-dte-errorbox {
+    left: 40% !important; } }
 
 /*# sourceMappingURL=all.css.map */

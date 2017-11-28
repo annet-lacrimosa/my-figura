@@ -30,6 +30,7 @@ $media-expressions: (
 @import 'base/reset';
 @import 'base/typography';
 @import 'base/forms';
+@import 'base/date-input';
 
 #wrapper{
 	position:relative;
@@ -92,7 +93,7 @@ p{
 	width: 620px;
 	margin: 0 auto 65px;
 	@include media("<=tablet"){
-		width: 80%;
+		width: 90%;
 	}
 	&.address-form{
 		width: 944px;
@@ -100,7 +101,7 @@ p{
 			width: 620px;
 		}
 		@include media("<=tablet"){
-			width: 80%;
+			width: 90%;
 		}
 	}
 	.input-row{
@@ -128,6 +129,7 @@ p{
 	.field-row{
 		max-width: 400px;
 		margin: 0 auto;
+		position: relative;
 	}
 	.label{
 		display: block;
@@ -271,4 +273,64 @@ p{
 	}
 }
 
+span.jq-dte{
+	position: static;
+}
+span.jq-dte-inner,
+input.date-input{
+	display:block;
+	width:100%;
+	max-width: 100%;
+	color:#333;
+	text-align:center;
+	justify-content: center;
+	outline:0;
+	border:1px solid $gray;
+	padding: 21px 15px 13px;
+	font-size:24px;
+	line-height: 1.3;
+	background:#fff;
+}
+span.jq-dte-inner{
+	display:flex;
+	overflow:hidden;
+	align-items:center;
+	transform:translate3d(0,0,0);
+}
+span.jq-dte input{
+	flex-grow:1;
+	height:30px;
+}
+span.jq-dte span.separator{
+	flex-srink:0;
+}
+span.jq-dte input.error{
+	color:$red;
+	background:#fff;
+}
+span.jq-dte input.hint{
+	color: $placeholder-color;
+}
+.jq-dte-month,
+.jq-dte-day{
+	@include media("<=tablet"){
+		width: 50px !important;
+	}
+}
+.jq-dte-year{
+	@include media("<=tablet"){
+		width: 100px !important;
+	}
+}
 
+span.jq-dte span.jq-dte-errorbox{
+	left: 22% !important;
+}
+span.jq-dte span.jq-dte-errorbox{
+	@include media("<=tablet"){
+		left: 30% !important;
+	}
+	@include media("<=phone"){
+		left: 40% !important;
+	}
+}
