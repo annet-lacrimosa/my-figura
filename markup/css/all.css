@@ -564,8 +564,6 @@ select {
   background: transparent url(../images/arrow-bottom.svg) no-repeat 100% center;
   background-size: 65px;
   color: #95989a;
-  color: transparent;
-  text-shadow: 0 0 0 #95989a;
   outline: none; }
   select:focus {
     outline: none; }

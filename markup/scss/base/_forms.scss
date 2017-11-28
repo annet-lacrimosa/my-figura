@@ -49,8 +49,6 @@ select {
   background: transparent url(../images/arrow-bottom.svg) no-repeat 100% center;
   background-size: 65px;
   color: $gray;
-  color: rgba(0,0,0,0);
-  text-shadow: 0 0 0 $gray;
   outline: none;
   &:focus{
     outline: none;
