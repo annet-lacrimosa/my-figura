@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta content="IE=Edge" http-equiv="X-UA-Compatible">
 	<title>My Figura</title>
-	<link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800|Open+Sans:300,400,600,700,800" rel="stylesheet">
 	<link media="all" rel="stylesheet" href="css/all.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
 	<script type="text/javascript">
@@ -15,6 +15,16 @@
 </head>
 <body>
 	<div id="wrapper">
+		<header class="header with-border">
+	<div class="center-holder header-holder">
+		<div class="logo">
+			<a href="#">
+				<img src="http://dummyimage.com/155x18.png/99cccc&text=Logo" alt="Logo"/>
+			</a>
+		</div>
+		<a href="tel:18888656402" class="tel">1-888-865-6402</a>
+	</div>
+</header>
 		<div class="vertical-center">
 			<div class="center-holder">
 				<div class="title-block text-center">
@@ -24,12 +34,12 @@
 					<fieldset>
 						<div class="input-row">
 							<div class="input-box">
-								<span class="label">Height</span>
-								<input placeholder="Height" type="text">
+								<span class="label">Height, feet and inches</span>
+								<input value="Height" type="number" min="4" max="7">
 							</div>
 							<div class="input-box">
-								<span class="label">Weight</span>
-								<input placeholder="Weight" type="text">
+								<span class="label">Weight, lbs</span>
+								<input value="Weight" type="number" min="90" max="300">
 							</div>
 						</div>
 					</fieldset>

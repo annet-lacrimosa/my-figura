@@ -3,6 +3,7 @@
 @@include("templates/head.html")
 <body>
 	<div id="wrapper">
+		@@include("templates/header2.html")
 		<div class="vertical-center">
 			<div class="center-holder">
 				<div class="title-block text-center">
@@ -12,12 +13,12 @@
 					<fieldset>
 						<div class="input-row">
 							<div class="input-box">
-								<span class="label">Height</span>
-								<input placeholder="Height" type="text">
+								<span class="label">Height, feet and inches</span>
+								<input value="Height" type="number" min="4" max="7">
 							</div>
 							<div class="input-box">
-								<span class="label">Weight</span>
-								<input placeholder="Weight" type="text">
+								<span class="label">Weight, lbs</span>
+								<input value="Weight" type="number" min="90" max="300">
 							</div>
 						</div>
 					</fieldset>

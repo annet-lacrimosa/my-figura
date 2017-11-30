@@ -1,5 +1,6 @@
 jQuery(function() {
     initDateInput();
+    initDropDownClasses();
 
     (function(){
         $('.open-popup-btn').on('click', function(e){
@@ -7,6 +8,36 @@ jQuery(function() {
         });
     }());
 
+
+    // start mobile menu init
+    var body = jQuery('body');
+    var opener = jQuery('.header .menu-opener');
+    var activeClass = 'nav-active';
+
+    opener.on('click', function(e) {
+        e.preventDefault();
+        body.toggleClass(activeClass);
+    });
+
+    // open drop on mobile
+    jQuery('.nav a').on('click', function(e) {
+        e.preventDefault();
+        jQuery(this).parent().toggleClass('is-active');
+    });
+
+
+    // add classes if item has dropdown
+    function initDropDownClasses() {
+        jQuery('.nav li').each(function() {
+            var item = jQuery(this);
+            var drop = item.find('.drop');
+            var link = item.find('a').eq(0);
+            if (drop.length) {
+                item.addClass('has-drop-down');
+                if (link.length) link.addClass('has-drop-down-a');
+            }
+        });
+    }
 
     /*function speedometer() {
         var s = Snap('#speedometer');
