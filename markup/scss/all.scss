@@ -51,6 +51,12 @@ $media-expressions: (
 			font-size: $base-font-size * 0.67; //16px
 		}
 	}
+	.logo{
+		max-width: 185px;
+		@include media("<=phone"){
+			max-width: 50%;
+		}
+	}
 }
 .header-holder{
 	display: flex;
