@@ -1031,12 +1031,12 @@ p {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    width: 100%; }
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
     @media (max-width: 768px) {
       .question-form .input-row {
-        margin: 0;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap; } }
+        margin: 0; } }
   .question-form .input-box {
     padding: 0 10px 20px;
     -webkit-box-flex: 0;
@@ -1060,6 +1060,10 @@ p {
     line-height: 14px;
     margin-bottom: 5px;
     color: #ddd; }
+  .question-form .label-box {
+    width: 100%;
+    display: block;
+    padding: 0 10px; }
   .question-form .legend {
     font-size: 18px;
     text-transform: uppercase;

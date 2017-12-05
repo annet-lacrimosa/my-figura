@@ -401,9 +401,9 @@ p{
 		margin: 0 -10px;
 		align-items: stretch;
 		width: 100%;
+		flex-wrap: wrap;
 		@include media("<=tablet"){
 			margin: 0;
-			flex-wrap: wrap;
 		}
 	}
 	.input-box{
@@ -430,6 +430,11 @@ p{
 		line-height: 14px;
 		margin-bottom: 5px;
 		color: $light-gray;
+	}
+	.label-box{
+		width: 100%;
+		display: block;
+		padding: 0 10px;
 	}
 	.legend{
 		font-size:18px;
